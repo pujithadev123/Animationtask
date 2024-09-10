@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     #one:hover{
+       animation-name: cookie1;
+       animation-duration: 2s;
+       animation-delay: 0s;
+       animation-iteration-count: 4;
+       animation-timing-function: linear;
+       animation-direction: alternate;
+     }
+     @keyframes  cookie1{
+        0%{
+          transform: translateX(0px) rotate(0deg);
+        }
+        50%{
+         transform: translateX(150px) rotate(180deg);
+        }
+        100%{
+         transform: translateX(300px) rotate(360deg);
+        }
+     }
+     #two:hover{
+       animation-name: cookie2;
+       animation-duration: 2s;
+       animation-delay: 0s;
+       animation-iteration-count: 4;
+       animation-timing-function: linear;
+       animation-direction: alternate;
+     }
+     @keyframes  cookie2{
+        0%{
+          transform: translateX(0px) rotate(0deg);
+        }
+        50%{
+         transform: translateX(-150px) rotate(-180deg);
+        }
+        100%{
+         transform: translateX(-300px) rotate(-360deg);
+        }
+     }
+     #three:hover{
+       animation-name: cookie3;
+       animation-duration: 2s;
+       animation-delay: 0s;
+       animation-iteration-count: 4;
+       animation-timing-function: linear;
+       animation-direction: alternate;
+     }
+     @keyframes  cookie3{
+        0%{
+          transform: translateY(0px) rotate(0deg);
+        }
+        50%{
+         transform: translateY(150px) rotate(180deg);
+        }
+        100%{
+         transform: translateY(300px) rotate(360deg);
+        }
+     }
+    </style>
+</head>
+<body>
+    <div>
+       <table border="1" cellspacing="0" cellpadding="40" width="100%">
+        <tbody>
+            <tr>
+                <td>Image-1</td>
+                <td class="box1"><img src="./cookie-1.jpg" alt="" width="150px" id="one"></td>
+            </tr>
+            <tr>
+                <td>Image2</td>
+                <td class="box1"><img src="./cookie-2.jpg" alt="" width="150px" id="two"></td>
+            </tr>
+            <tr>
+                <td>Image-3</td>
+                <td class="box1"><img src="./cookie-3.jpeg" alt="" width="150px" id="three"></td>
+            </tr>
+        </tbody>
+       </table>
+    </div>
+</body>
+</html>
